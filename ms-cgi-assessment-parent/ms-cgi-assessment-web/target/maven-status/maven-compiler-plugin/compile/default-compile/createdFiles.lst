@@ -1,0 +1,6 @@
+com\cgi\ms\assessment\web\constants\WebConstants.class
+com\cgi\ms\assessment\web\controller\ReceipeController.class
+com\cgi\ms\assessment\web\handler\ApiExceptionHandler.class
+com\cgi\ms\assessment\web\CGIAssessmentApplication$1.class
+com\cgi\ms\assessment\web\controller\LogAnalyserController.class
+com\cgi\ms\assessment\web\CGIAssessmentApplication.class
