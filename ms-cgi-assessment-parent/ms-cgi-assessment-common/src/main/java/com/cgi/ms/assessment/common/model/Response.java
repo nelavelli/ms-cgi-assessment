@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ErrorMessage implements Serializable {
+public class Response implements Serializable {
 	
 	private static final long serialVersionUID = 7564551719118441163L;
 	
@@ -20,11 +20,11 @@ public class ErrorMessage implements Serializable {
 	
 	private String property;
 
-	public ErrorMessage() {
+	public Response() {
 
 	}
 
-	public ErrorMessage(Integer statusCode, String status, String message, String property) {
+	public Response(Integer statusCode, String status, String message, String property) {
 		this.statusCode = statusCode;
 		this.status = status;
 		this.message = message;

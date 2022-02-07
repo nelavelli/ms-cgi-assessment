@@ -6,9 +6,12 @@ public enum ErrorCode {
 
 	INTERNAL_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR,
 			"There was some technical issue for this operation, Please try after sometime."),
+	SERVICE_UNAVAILABLE(HttpStatus.SERVICE_UNAVAILABLE,
+			"Other down-stream systems are down, Please try after sometime."),
 	DATA_NOT_FOUND(HttpStatus.NOT_FOUND, "No data found with the given information, Please try by changing your input."),
+	NO_ENDPOINT_FOUND(HttpStatus.NOT_FOUND, "Please correct your endpoint, You might be looking for diff service."),
 	BAD_REQUEST(HttpStatus.BAD_REQUEST, "Looks to be invalid payload passed, Please check your input data once.");
-
+	
 	private HttpStatus status;
 
 	private String message;

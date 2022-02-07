@@ -5,7 +5,7 @@
             http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
             http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
 
-    <cache alias="allReceipeCache">
+    <cache alias="allRecipeCache">
         <key-type>java.lang.String</key-type>
         <value-type>java.util.List</value-type>
         <expiry>
@@ -29,7 +29,7 @@
         </resources>
     </cache>
     
-    <cache alias="longAnalyserCache">
+    <cache alias="logAnalyserCache">
         <key-type>java.lang.String</key-type>
         <value-type>java.util.Map</value-type>
         <expiry>

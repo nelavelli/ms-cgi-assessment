@@ -13,12 +13,12 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 
 @Target({ METHOD, FIELD, PARAMETER })
-@Constraint(validatedBy = ValidIngredientValidator.class)
+@Constraint(validatedBy = ValidLogTypeValidator.class)
 @Retention(RUNTIME)
 @Documented
 public @interface ValidLogLevel {
 
-	String message() default "Log Level can't be empty and only TRACE | DEBUG | INFO | WARN | ERROR | FATAL are allowed log levels.";
+	String message() default "{com.cgi.ms.web.log.valid.log.type.value}";
 
 	Class<?>[] groups() default {};
 

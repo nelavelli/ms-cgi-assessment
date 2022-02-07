@@ -3,10 +3,10 @@ package com.cgi.ms.assessment.business;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.cgi.ms.assessment.data.CGIAssessmentData;
+import com.cgi.ms.assessment.data.CGIAssessmentDataModule;
 
 @Configuration
-@ComponentScan(basePackageClasses = CGIAssessmentData.class)
-public class CGIAssessmentBuiness {
+@ComponentScan(basePackageClasses = CGIAssessmentDataModule.class)
+public class CGIAssessmentBuinessModule {
 
 }

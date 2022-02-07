@@ -11,11 +11,11 @@ public class Ingredient implements Serializable {
 
 	String title;
 
-	Receipe receipe;
+	Recipe recipe;
 
-	public Ingredient(String title, Receipe receipe) {
+	public Ingredient(String title, Recipe recipe) {
 		this.title = title;
-		this.receipe = receipe;
+		this.recipe = recipe;
 	}
 
 }

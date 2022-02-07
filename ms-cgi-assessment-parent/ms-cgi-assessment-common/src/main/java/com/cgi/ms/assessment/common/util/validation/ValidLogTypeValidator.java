@@ -12,7 +12,7 @@ import com.cgi.ms.assessment.common.enums.LogLevel;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class ValidIngredientValidator implements ConstraintValidator<ValidLogLevel, String> {
+public class ValidLogTypeValidator implements ConstraintValidator<ValidLogLevel, String> {
 
 	private static final Set<String> allowedValues = Stream.of(LogLevel.values()).map(e -> e.name())
 			.collect(Collectors.toSet());;

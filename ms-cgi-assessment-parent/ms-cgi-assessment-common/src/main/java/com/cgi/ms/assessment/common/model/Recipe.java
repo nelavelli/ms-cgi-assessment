@@ -9,10 +9,12 @@ import static org.apache.commons.lang3.StringUtils.compare;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Receipe implements Comparable<Receipe>, Serializable {
+@EqualsAndHashCode(callSuper = false)
+public class Recipe extends Response implements Comparable<Recipe>, Serializable {
 
 	private static final long serialVersionUID = -1240783856584073644L;
 
@@ -25,8 +27,27 @@ public class Receipe implements Comparable<Receipe>, Serializable {
 	private String thumbnail;
 
 	@Override
-	public int compareTo(Receipe o) {
+	public int compareTo(Recipe o) {
 		return Objects.isNull(o) ? 1 : compare(this.getTitle(), o.getTitle());
 	}
-
+	
+	public Recipe setTitle(String title) {
+		this.title = title;
+		return this;
+	}
+	
+	public Recipe setHref(String href) {
+		this.href = href;
+		return this;
+	}
+	
+	public Recipe setIngredients(List<String> ingredients) {
+		this.ingredients = ingredients;
+		return this;
+	}
+	
+	public Recipe setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
+		return this;
+	}
 }
